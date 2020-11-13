@@ -2,4 +2,7 @@
 #
 #kasutaja tervitus
 #
-echo "Tere, kasutaja!"
+kasutajanimi=$(whoami)
+echo -n "Tere, "
+echo -n $(whoami)
+echo "!"
