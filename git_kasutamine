@@ -1,0 +1,10 @@
+1. Giti paigaldamine
+
+Linux: apt-get install -y git
+
+2. Konfigureerid giti
+
+Näide:
+# $ git config --global user.name "Tarvi"
+# $ git config --global user.email tarviarbma@hotmail.com
+# $ git config --global core.editor nano
