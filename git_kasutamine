@@ -11,3 +11,11 @@ Näide:
 
 3. Initsialiseerimine (alguses, ainult üks kord töökaustas)
 # - git init
+
+4. Kasutamine
+# git status
+# git add fail_nimi
+# git commit -m "muudatuste kirjeldus"
+
+# git log
+# git show (commiti_hash)
