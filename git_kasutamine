@@ -19,3 +19,9 @@ Näide:
 
 # git log
 # git show (commiti_hash)
+
+
+5. Remote kasutamine
+a) github grepo ühenduse loomine:
+# git remote add origin https://github.com/tarviarbma/skripti_alused.git
+# git push -u origin master
