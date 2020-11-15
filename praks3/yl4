@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+#YLESANNE4
+grupis=reisijatearv
+kohad=vabadkohad
+echo "Mitu reisijat on grupis: "
+read reisijatearv
+echo "Mitu kohta on ühes bussis: "
+read vabadkohad
+taisbusse=$(( vabadkohad / reisijatearv  ))
+buss_ymarda="`echo "($taisbusse+0.9)/1" | bc`" 
+mahajaanud=$((reisijatearv - vabadkohad))
+echo "Täis busse on $buss_ymarda ja maha on jäänud $mahajaanud" 
