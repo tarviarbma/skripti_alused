@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+#YLESANNE3
+ap=ainepunktid
+nadala=nadalate
+echo "Sisesta ainepunktide arv: "
+read ainepunktid
+echo "Sisesta nädalate arv: "
+read nadalate
+aeg=$(( ainepunktid * nadalate / 10 ))
+aeg_ymarda="`echo "($aeg+0.9)/1" | bc`"
+echo $aeg_ymarda
