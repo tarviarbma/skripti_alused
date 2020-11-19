@@ -4,8 +4,10 @@
 echo "Sisesta suvaline täisarv: "
 read taisarv
 # kahega jagades saan jäägi, sellega saan kontrollida
-if $(( taisarav % 2 ))= -eq
-	then echo "$Arv on paaris"
-	else echo "Arv on paaritu"
+if [ $(( taisarv%2 )) -eq 0 ]
+then
+ echo "$taisarv on paaris"
+	else
+		 echo "$taisarv on paaritu"
 #Kontrolli lõpp
 fi
