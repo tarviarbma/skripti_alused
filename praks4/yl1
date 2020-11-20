@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# kas arv on paaris või ei ole
+echo "Sisesta suvaline täisarv: "
+read taisarv
+# kahega jagades saan jäägi, sellega saan kontrollida
+if [ $(( taisarv%2 )) -eq 0 ]
+then
+ echo "$taisarv on paaris"
+	else
+		 echo "$taisarv on paaritu"
+#Kontrolli lõpp
+#hihi
+fi
