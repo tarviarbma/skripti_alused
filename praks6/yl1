@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+#Antud skript arvutab esimese kümne paarisarvu summa
+#
+tekkivarv=0
+for (( arv=1; arv<11; arv++ ))
+do
+	taisarv=$(($arv % 2))
+	if  [  $taisarv  -eq 0  ]; then
+		tekkivarv=$(($tekkivarv + $arv))
+		echo $tekkivarv
+	fi
+done
+echo "Arvude vahemikus 1 kuni 10 paarissummade summa on $tekkivarv"
+#skript lõppeb
