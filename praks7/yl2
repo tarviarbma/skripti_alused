@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+#Esimene harjutus praks 7
+#Kasutaja saab sisestada ridade arvu, sümbolite arvu ning vastavalt sellele, tekib kujund
+echo "Sisesta ridade arv"
+read ridadearv
+echo "Sisesta sümbolite arv"
+read symbolid
+for (( i = 1; i <=ridadearv; i++)) do
+        for (( j = 1 ; j <= symbolid; j++))
+        do
+                echo -n  "*"
+	done
+   echo "" 
+done
