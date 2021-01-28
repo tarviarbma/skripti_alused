@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# kas arv on paaris või ei ole
+taisarv=$1
+ulejaak=$(( taisarv%2 ))
+# kui ei sisesta midagi
+if [ $# -eq 0 ]; then
+
+	 echo "$Sisestage arv"
+#kui sisestatakse arv
+else
+	if [$ulejaak -eq 0]; then
+        echo "$taisarv on paaris"'
+	elif [$ulejaak -eq 1]; then
+	echo "$taisarv on paaritu"
+	fi
+#Kontrolli lõpp
+#hihi
+fi
+
