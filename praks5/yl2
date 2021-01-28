@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+# kuu järgi väljastab aastaaja
+# PROOVISIN KA " || " funktsiooni, kuid  ei saanud töötavat programmi
+#
+echo "Sisesta kuu  arvuna"
+read kuu
+#
+if test $kuu -eq 1 -o $kuu -eq 2 -o $kuu -eq 12
+then
+        echo "Talv"
+elif test $kuu -eq 3 -o $kuu -eq 4 -o $kuu -eq 5
+then
+        echo "Kevad"
+elif test $kuu -eq 6  -o $kuu -eq 7 -o $kuu -eq 8 
+then
+        echo "Suvi"
+elif test  $kuu -eq 9 -o $kuu -eq 10 -o  $kuu -eq  11
+then
+        echo "Sügis"
+else
+        echo "Antud kuud ei eksisteeri"
+fi
+#LÕPP
+

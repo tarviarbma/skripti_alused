@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+#küsib kasutajalt tema vanuse
+# 0-11 laps, 12-18 nooruk 19- 63 täiskasvanu 63+ senjoor
+echo "Sisesta oma vanus: "
+read vanus
+if (($vanus <= 11)) && (($vanus>= 0)); then
+	echo "Oled laps"
+elif (($vanus  > 11)) && (($vanus <=18)); then
+	echo "Oled nooruk"
+elif (($vanus > 18)) && (($vanus <=63)); then
+	echo "Oled täiskasvanu"
+elif (( $vanus >= 63)); then
+	echo "Oled senjoor"
+elif ((  $vanus <0)); then
+	echo "Palun sisestada ainult postiivne naturaalarv"
+fi
