@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+#
+#KONTROLLTÖÖ KOLMAS ÜLESANNE
+#Tarvi Arbma, kt3 -kujund  - koosta skript,
+#1. Laseb sisestada kujundi ridade arv
+#2. Trükib kujundi tärnidena  vastavalt ridade arvudele
+echo "Sisesta ridade arv, maagiliselt tekib kujund! "
+read arv
+tarn="*"
+for (( i = $arv; i>=1; i--));
+do
+	for (( j = 1 ; j <= i; j++));
+	do
+		echo -n "*"
+	done
+  echo ""
+done
+#jackpot nagu bum

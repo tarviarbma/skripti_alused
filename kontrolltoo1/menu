@@ -1,0 +1,29 @@
+#!/bin/bash
+#
+#
+#KONTROLLTÖÖ TEINE  ÜLESANNE
+#Tarvi Arbma, kt2 -menu  - koosta skript, 
+#1. väljastab kasutajale menüü 1) liha ja kartulid 2) kala ja krõpsud 3) supp ja salat
+#2. pakub kasutajale valikut, vastavalt sellele annab kirjelduse
+
+echo "Tänased päevapakkumised on"
+echo -e "1) liha ja kartulid"
+echo -e "2) kala ja krõpsud"
+echo -e "3) supp ja salat"
+echo "Palun sisestada oma valik numbrina"
+read arv
+if [ $arv -eq 1 ]; then
+	echo "Väga maitsev, aga jälgi oma tervist!"
+	echo -e "Head isu!"
+
+elif [ $arv -eq 2 ]; then
+	echo "Brititoit on maitsev"
+	echo -e "Head isu!"
+
+elif [ $arv -eq 3 ]; then
+	echo "Nii tervislik ja igav..."
+	echo -e "Head isu!"
+else
+	echo "Meie menüüs pole sellist valikut!"
+fi
+#LÕPP

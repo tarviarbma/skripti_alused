@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+#
+#KONTROLLTÖÖ ESIMENE ÜLESANNE
+#Tarvi Arbma, kt1 -info - koosta skript, kus
+#1.Kirjas minu nimi, skripti nimi, skripti ülesande kirjeldus
+#2.Skript tervitab sisselogitud isikut
+#3. Väljastab kuupäeva ja aja
+#
+#
+kesmaolen=$(whoami)
+kuupaev=$(date)
+echo "Tere, $kesmaolen. Tänane kell ja kuupäev: $kuupaev"
