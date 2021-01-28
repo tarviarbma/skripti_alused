@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+#YLESANNE2
+#
+#küsin andmed üle
+#tahan täisbusside arvu teada
+
+echo "Mitu reisijat on grupis: "
+read reisijatearv
+echo "Mitu kohta on ühes bussis: "
+read vabadkohad
+#arvutan mitu bussi on vaja
+taisbusse=$(($reisijatearv / $vabadkohad))
+#nüüd on täisbusside arv teada, kui on mahajäänuid inimesi, suurendan busse
+mahajaanud=$(($reisijatearv % $vabadkohad))
+
+if test $mahajaanud -gt 0
+then
+	taisbusse=$(($taisbusse+1))
+fi
+#tulemuse
+echo "Täis busse on kokku vaja $taisbusse"
+#lõpp 
