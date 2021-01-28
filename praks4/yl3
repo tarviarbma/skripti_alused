@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+
+
+opsysteem=0
+echo "1. Unix (Sun Os)"
+echo "2. Linux (Red Hat)"
+echo -n "Select your os choice (1 or 2)?"
+read opsysteem
+
+if ($opsysteem -eq 1);
+then
+       echo "Sa valisid Unix (Sun Os)"
+else
+	if ($opsysteem -eq 2) ; then
+		echo"Sa valisid Linuxi (Red Hat)"
+	else
+		echo"Mis sulle ei meeldi Linux ega Unix?"
+	fi
+fi
+
